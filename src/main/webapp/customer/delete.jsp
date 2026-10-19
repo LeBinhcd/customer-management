@@ -1,0 +1,2 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8"><title>Xóa khách hàng</title></head><body><h2>Xác nhận xóa khách hàng</h2><p>${customer.name} - ${customer.email}</p><form action="${pageContext.request.contextPath}/customers?action=delete" method="post"><input type="hidden" name="id" value="${customer.id}"><button type="submit">Đồng ý xóa</button></form><a href="${pageContext.request.contextPath}/customers">Hủy</a></body></html>
